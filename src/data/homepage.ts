@@ -1,4 +1,5 @@
 import type {
+  BlogPost,
   FeatureItem,
   GalleryCard,
   HomepageData,
@@ -200,6 +201,33 @@ export const galleryCards: GalleryCard[] = [
   },
 ];
 
+export const blogPosts: BlogPost[] = [
+  {
+    id: "post-1",
+    title: "Helping kids build healthy reading habits at home",
+    imageUrl: assetA,
+    link: "#",
+  },
+  {
+    id: "post-2",
+    title: "Why play-based learning shapes early curiosity",
+    imageUrl: assetB,
+    link: "#",
+  },
+  {
+    id: "post-3",
+    title: "Five ways to nurture creativity in young children",
+    imageUrl: assetC,
+    link: "#",
+  },
+  {
+    id: "post-4",
+    title: "Building emotional confidence through small daily rituals",
+    imageUrl: assetA,
+    link: "#",
+  },
+];
+
 export const homepageData: HomepageData = {
   navItems,
   heroStats,
@@ -209,6 +237,7 @@ export const homepageData: HomepageData = {
   testimonials,
   teacherProfiles,
   galleryCards,
+  blogPosts,
   heroImage: assetB,
   videoCover: assetC,
   highlightImage: assetA,

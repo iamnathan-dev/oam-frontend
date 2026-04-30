@@ -55,6 +55,13 @@ export interface GalleryCard {
   imageUrl: string;
 }
 
+export interface BlogPost {
+  id: string;
+  title: string;
+  imageUrl: string;
+  link: string;
+}
+
 export interface HomepageData {
   navItems: NavItem[];
   heroStats: StatItem[];
@@ -64,6 +71,7 @@ export interface HomepageData {
   testimonials: Testimonial[];
   teacherProfiles: Teacher[];
   galleryCards: GalleryCard[];
+  blogPosts: BlogPost[];
   heroImage: string;
   videoCover: string;
   highlightImage: string;

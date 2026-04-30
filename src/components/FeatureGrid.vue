@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mt-20">
-    <div v-for="(item, index) in items" :key="item.id" class="relative group">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 md:gap-14 lg:gap-10 xl:gap-12 mt-12 md:mt-16 lg:mt-20 w-full">
+    <div v-for="(item, index) in items" :key="item.id" class="relative group flex justify-center">
       <!-- Peeking Monster (CSS Character) -->
       <div
         class="absolute -top-10 left-1/2 -translate-x-1/2 w-[50%] h-[180px] z-0 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:-top-24 pointer-events-none"
@@ -47,7 +47,7 @@
       </div>
 
       <Card
-        class="relative p-7 min-h-[342px] w-[295px] border flex flex-col transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none overflow-visible ring-0 z-10"
+        class="relative p-6 sm:p-7 min-h-[300px] sm:min-h-[342px] w-full max-w-[320px] sm:max-w-none border flex flex-col transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none overflow-visible ring-0 z-10"
         :class="[
           themes[index % themes.length].shadow,
           themes[index % themes.length].hoverBg,
